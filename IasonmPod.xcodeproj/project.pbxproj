@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8F13BBA7213ED898009DB511 /* IasonmPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F13BBA5213ED898009DB511 /* IasonmPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F13BBAE213ED8A7009DB511 /* IasonmPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13BBAD213ED8A7009DB511 /* IasonmPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F13BBA2213ED898009DB511 /* IasonmPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IasonmPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F13BBA5213ED898009DB511 /* IasonmPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IasonmPod.h; sourceTree = "<group>"; };
 		8F13BBA6213ED898009DB511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F13BBAD213ED8A7009DB511 /* IasonmPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IasonmPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				8F13BBA5213ED898009DB511 /* IasonmPod.h */,
 				8F13BBA6213ED898009DB511 /* Info.plist */,
+				8F13BBAD213ED8A7009DB511 /* IasonmPod.swift */,
 			);
 			path = IasonmPod;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					8F13BBA1213ED898009DB511 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F13BBAE213ED8A7009DB511 /* IasonmPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		8F13BBAB213ED898009DB511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,7 +281,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jason.IasonmPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		8F13BBAC213ED898009DB511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -300,7 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jason.IasonmPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
