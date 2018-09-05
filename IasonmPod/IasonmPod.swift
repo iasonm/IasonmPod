@@ -10,7 +10,7 @@ import Foundation
 
 public class IasonmPod {
     public class func logToConsole(msg: String) {
-        print("Version 1.0.0: \(msg)" )
+        print("Version 1.1.0: \(msg)" )
     }
 }
 
